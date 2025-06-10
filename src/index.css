@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Primary */
+  --color-green-400: hsl(172, 67%, 45%);
+
+  /* Neutral */
+  --color-green-900: hsl(183, 100%, 15%);
+  --color-grey-500: hsl(186, 14%, 43%);
+  --color-grey-400: hsl(184, 14%, 56%);
+  --color-grey-200: hsl(185, 41%, 84%);
+  --color-grey-50: hsl(189, 47%, 97%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* Font */
+  --font-mono: "Space Mono", monospace;
+}
+
+@layer base {
+  p {
+    @apply text-grey-500;
+  }
+}
+
+/* Hide number input spinners for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinners for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@utility amountContainer {
+  @apply flex justify-between items-center;
+
+  & > div {
+    @apply flex flex-col;
+  }
+
+  & > p {
+    @apply text-green-400 text-2xl;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+  }
+}
