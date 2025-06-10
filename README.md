@@ -80,7 +80,7 @@ onKeyDown={e => {
 
 ## Author
 
-- Frontend Mentor - [@HammamYousef](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@HammamYousef](https://www.frontendmentor.io/profile/HammamYousef)
 
 ## Acknowledgments
 
